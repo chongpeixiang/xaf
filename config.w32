@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("xaf", "for xaf support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("xaf", "enable xaf support", "no");
+
+if (PHP_XAF != "no") {
+	EXTENSION("xaf", "xaf.c");
+}
+
